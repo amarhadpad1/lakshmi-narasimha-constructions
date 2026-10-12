@@ -7,6 +7,3 @@ Static website (HTML, CSS, JavaScript). No build step.
 - style.css: styling
 - script.js: photo viewer and contact form (sends enquiries to a Google Sheet)
 - images/: logo.jpg, hero.jpg, deity.jpg, photo-1.jpg to photo-6.jpg
-
-## Deploy on Vercel
-Import this repository in Vercel and click Deploy. No settings need changing.

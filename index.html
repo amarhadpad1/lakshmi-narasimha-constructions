@@ -4,7 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Lakshmi Narasimha Constructions</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;600&display=swap">
+  <meta name="description" content="Lakshmi Narasimha Constructions builds apartments, independent homes and commercial buildings with honest pricing, quality materials and on-time handover.">
+  <meta name="theme-color" content="#0b0c0e">
+  <meta property="og:title" content="Lakshmi Narasimha Constructions">
+  <meta property="og:description" content="Apartments, homes and commercial buildings. Built strong. Built to last.">
+  <meta property="og:type" content="website">
+  <script>document.documentElement.className='js'</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,6 +36,7 @@
 <main id="top">
   <div class="hero">
     <div class="wrap">
+      <p class="eyebrow">Apartments &middot; Homes &middot; Commercial</p>
       <h1>Built strong. Built to last.</h1>
       <p>Lakshmi Narasimha Constructions builds apartments, homes and commercial buildings with honest pricing, quality materials and on-time handover.</p>
       <a class="btn" href="#contact">Get a free quote</a>
@@ -37,9 +46,10 @@
 
   <section id="work">
     <div class="wrap">
-      <h2>Our work, from foundation to finish</h2>
+      <p class="kicker">Portfolio</p>
+      <h2>Our work, from foundation to finishing</h2>
       <p class="lead">Real sites, real progress. Tap any photo to enlarge it.</p>
-      <div class="gal">
+      <div class="gal reveal">
       <figure>
         <img loading="lazy" src="images/photo-1.jpg" alt="Completed apartment building">
         <figcaption>Completed apartment building</figcaption>
@@ -70,9 +80,10 @@
 
   <section id="services" class="band">
     <div class="wrap">
+      <p class="kicker">Services</p>
       <h2>What we build</h2>
       <p class="lead">One team handles the whole job, from the first column to the final coat of paint.</p>
-      <div class="grid">
+      <div class="grid reveal">
         <div class="card"><h3>Apartments</h3><p>Multi-storey apartment buildings with clear pricing and a fixed handover date.</p></div>
         <div class="card"><h3>Independent homes</h3><p>Houses and villas designed around your plot, budget and family.</p></div>
         <div class="card"><h3>Commercial buildings</h3><p>Shops, offices and warehouses built for daily use and easy upkeep.</p></div>
@@ -82,11 +93,9 @@
   </section>
 
   <section id="about">
-  <div class="wrap two">
-    <div>
-      <img class="deity" src="images/deity.jpg" alt="Lakshmi Narasimha Swamy" style="width:240px; max-width:100%; height:auto; display:block; border-radius:12px; border:2px solid #c9a24a;">
-    </div>
-    <div>
+  <div class="wrap">
+    <div class="about-text">
+      <p class="kicker">About us</p>
       <h2>Honest work, every stage</h2>
       <p>We explain costs upfront, use tested materials, and keep you updated at each stage, from masonry and slabs to plastering and finishing, until the keys are in your hand.</p>
       <p>One team handles the whole job, from the first column to the final coat of paint.</p>
@@ -98,6 +107,7 @@
   <section id="contact" class="band">
     <div class="wrap two">
       <div>
+        <p class="kicker">Contact</p>
         <h2>Talk to us</h2>
         <p class="lead">Tell us about your plot or project and we will call you back.</p>
         <p><b>K Janardhana Rao</b><br><b>Phone:</b> <a href="tel:+919848261089">+91 98482 61089</a></p>
@@ -107,11 +117,13 @@
         <a class="btn alt" href="https://wa.me/919848261089?text=Hello%2C%20I%20am%20interested%20in%20a%20construction%20project" target="_blank" rel="noopener">WhatsApp</a>
       </div>
       <form id="f">
-        <div><label for="n">Your name</label><input id="n" required></div>
-        <div><label for="p">Phone number</label><input id="p" type="tel" required></div>
+        <div class="row">
+          <div><label for="n">Your name</label><input id="n" required autocomplete="name"></div>
+          <div><label for="p">Phone number</label><input id="p" type="tel" required autocomplete="tel"></div>
+        </div>
         <div><label for="t">Project type</label>
-          <select id="t"><option>Apartment</option><option>Independent home</option><option>Commercial</option><option>Renovation</option></select></div>
-        <div><label for="m">Details</label><textarea id="m" rows="3"></textarea></div>
+          <select id="t" required><option value="" selected disabled hidden>Select project type</option><option>Apartment</option><option>Independent home</option><option>Duplex</option><option>Commercial</option><option>Shed work</option><option>Renovation</option></select></div>
+        <div><label for="m">Details (optional)</label><textarea id="m" rows="2"></textarea></div>
         <button class="btn" type="submit">Request a callback</button>
         <div id="msg" role="status"></div>
       </form>
@@ -119,7 +131,7 @@
   </section>
 </main>
 
-<footer><div class="wrap">&copy; Lakshmi Narasimha Constructions. All rights reserved.</div></footer>
+<footer><div class="wrap">&copy; <span id="yr">2026</span> Lakshmi Narasimha Constructions. All rights reserved.</div></footer>
 
 <dialog id="d"><img id="di" alt=""></dialog>
 <script src="script.js"></script>
