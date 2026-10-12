@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lakshmi Narasimha Constructions</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#top">
+        <img class="lg round" src="images/logo.jpg" alt="Lakshmi Narasimha Swamy">
+        <span>Lakshmi Narasimha Constructions</span>
+      </a>
+      <ul>
+        <li><a href="#work">Our work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Built strong. Built to last.</h1>
+      <p>Lakshmi Narasimha Constructions builds apartments, homes and commercial buildings with honest pricing, quality materials and on-time handover.</p>
+      <a class="btn" href="#contact">Get a free quote</a>
+      <a class="btn alt" href="#work">View our work</a>
+    </div>
+  </div>
+
+  <section id="work">
+    <div class="wrap">
+      <h2>Our work, from foundation to finish</h2>
+      <p class="lead">Real sites, real progress. Tap any photo to enlarge it.</p>
+      <div class="gal">
+      <figure>
+        <img loading="lazy" src="images/photo-1.jpg" alt="Completed apartment building">
+        <figcaption>Completed apartment building</figcaption>
+      </figure>
+      <figure>
+        <img loading="lazy" src="images/photo-2.jpg" alt="Apartment block, plastering stage">
+        <figcaption>Apartment block, plastering stage</figcaption>
+      </figure>
+      <figure>
+        <img loading="lazy" src="images/photo-3.jpg" alt="Multi-storey frame with scaffolding">
+        <figcaption>Multi-storey frame with scaffolding</figcaption>
+      </figure>
+      <figure>
+        <img loading="lazy" src="images/photo-4.jpg" alt="Textured facade finish with balconies">
+        <figcaption>Textured facade finish with balconies</figcaption>
+      </figure>
+      <figure>
+        <img loading="lazy" src="images/photo-5.jpg" alt="Columns and slab shuttering">
+        <figcaption>Columns and slab shuttering</figcaption>
+      </figure>
+      <figure>
+        <img loading="lazy" src="images/photo-6.jpg" alt="Facade work under scaffolding">
+        <figcaption>Facade work under scaffolding</figcaption>
+      </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="band">
+    <div class="wrap">
+      <h2>What we build</h2>
+      <p class="lead">One team handles the whole job, from the first column to the final coat of paint.</p>
+      <div class="grid">
+        <div class="card"><h3>Apartments</h3><p>Multi-storey apartment buildings with clear pricing and a fixed handover date.</p></div>
+        <div class="card"><h3>Independent homes</h3><p>Houses and villas designed around your plot, budget and family.</p></div>
+        <div class="card"><h3>Commercial buildings</h3><p>Shops, offices and warehouses built for daily use and easy upkeep.</p></div>
+        <div class="card"><h3>Renovation</h3><p>Extensions, structural repairs, flooring, plumbing and electrical work.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+  <div class="wrap two">
+    <div>
+      <img class="deity" src="images/deity.jpg" alt="Lakshmi Narasimha Swamy" style="width:240px; max-width:100%; height:auto; display:block; border-radius:12px; border:2px solid #c9a24a;">
+    </div>
+    <div>
+      <h2>Honest work, every stage</h2>
+      <p>We explain costs upfront, use tested materials, and keep you updated at each stage, from masonry and slabs to plastering and finishing, until the keys are in your hand.</p>
+      <p>One team handles the whole job, from the first column to the final coat of paint.</p>
+      <p>To talk about your plot or project, call or WhatsApp K Janardhana Rao.</p>
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="band">
+    <div class="wrap two">
+      <div>
+        <h2>Talk to us</h2>
+        <p class="lead">Tell us about your plot or project and we will call you back.</p>
+        <p><b>K Janardhana Rao</b><br><b>Phone:</b> <a href="tel:+919848261089">+91 98482 61089</a></p>
+        <!-- Add email and address here when available:
+        <br><b>Email:</b> ...  <br><b>Address:</b> ... -->
+        <a class="btn" href="tel:+919848261089">Call now</a>
+        <a class="btn alt" href="https://wa.me/919848261089?text=Hello%2C%20I%20am%20interested%20in%20a%20construction%20project" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <form id="f">
+        <div><label for="n">Your name</label><input id="n" required></div>
+        <div><label for="p">Phone number</label><input id="p" type="tel" required></div>
+        <div><label for="t">Project type</label>
+          <select id="t"><option>Apartment</option><option>Independent home</option><option>Commercial</option><option>Renovation</option></select></div>
+        <div><label for="m">Details</label><textarea id="m" rows="3"></textarea></div>
+        <button class="btn" type="submit">Request a callback</button>
+        <div id="msg" role="status"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">&copy; Lakshmi Narasimha Constructions. All rights reserved.</div></footer>
+
+<dialog id="d"><img id="di" alt=""></dialog>
+<script src="script.js"></script>
+</body>
+</html>

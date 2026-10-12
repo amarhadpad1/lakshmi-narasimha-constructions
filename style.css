@@ -1,0 +1,275 @@
+/* Lakshmi Narasimha Constructions */
+:root {
+  --bg:#0e0f11;
+  --ink:#f1ece2;
+  --mute:#a59d8f;
+  --gold:#c9a24a;
+  --card:#16181a;
+  --line:#2a2c2e;
+  color-scheme:dark;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px)
+}
+html {
+  scroll-behavior:smooth;
+  scroll-padding-top:70px
+}
+* {
+  box-sizing:border-box
+}
+body {
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font:17px/1.7 Manrope,"Segoe UI",Arial,sans-serif
+}
+h1,h2,h3 {
+  font-family:"Cormorant Garamond",Georgia,serif;
+  line-height:1.1;
+  margin:0;
+  font-weight:700
+}
+a {
+  color:inherit
+}
+:focus-visible {
+  outline:3px solid var(--gold);
+  outline-offset:2px
+}
+.wrap {
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 22px
+}
+header {
+  position:sticky;
+  top:env(safe-area-inset-top,0px);
+  z-index:5;
+  background:rgba(14,15,17,.93);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--gold)
+}
+nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+  padding:10px 0
+}
+.brand {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+  color:var(--gold);
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-weight:700;
+  font-size:1.3rem
+}
+.lg {
+  height:46px;
+  width:auto;
+  display:block
+}
+.lg.round {
+  width:64px;
+  height:64px;
+  border-radius:50%;
+  border:2px solid var(--gold);
+  object-fit:cover
+}
+.deity {
+  width:100%;
+  max-width:340px;
+  margin-top:22px;
+  border:2px solid var(--gold);
+  display:block
+}
+nav ul {
+  display:flex;
+  gap:20px;
+  list-style:none;
+  margin:0;
+  padding:0;
+  font-size:.95rem
+}
+nav ul a {
+  text-decoration:none;
+  color:var(--mute)
+}
+nav ul a:hover {
+  color:var(--gold)
+}
+.hero {
+  min-height:88vh;
+  display:flex;
+  align-items:flex-end;
+  background:linear-gradient(180deg,rgba(14,15,17,.25),rgba(14,15,17,.92)),url("images/hero.jpg") center 25%/cover;
+  padding:100px 0 70px
+}
+.hero h1 {
+  font-size:clamp(2.6rem,8vw,5.2rem);
+  max-width:13ch
+}
+.hero h1::after {
+  content:"";
+  display:block;
+  width:80px;
+  height:3px;
+  background:var(--gold);
+  margin-top:24px
+}
+.hero p {
+  max-width:50ch;
+  color:#d9d2c6;
+  font-size:1.15rem;
+  margin:22px 0 30px
+}
+.btn {
+  display:inline-block;
+  background:var(--gold);
+  color:#14110a;
+  padding:14px 28px;
+  text-decoration:none;
+  border:0;
+  cursor:pointer;
+  font:inherit;
+  font-weight:600
+}
+.btn.alt {
+  background:transparent;
+  color:var(--ink);
+  border:2px solid var(--gold);
+  margin-left:10px
+}
+.btn.sm {
+  padding:8px 14px;
+  font-size:.9rem;
+  margin:2px
+}
+section {
+  padding:84px 0
+}
+h2 {
+  font-size:clamp(2rem,5vw,3.1rem);
+  margin-bottom:14px
+}
+.lead {
+  color:var(--mute);
+  max-width:56ch;
+  margin:0 0 38px
+}
+.gal {
+  columns:3 270px;
+  column-gap:14px
+}
+.gal figure {
+  margin:0 0 14px;
+  position:relative;
+  break-inside:avoid;
+  border:1px solid var(--line)
+}
+.gal img {
+  width:100%;
+  display:block
+}
+.gal figure {
+  cursor:zoom-in
+}
+.gal figcaption {
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:34px 14px 12px;
+  font-size:.88rem;
+  background:linear-gradient(0deg,rgba(0,0,0,.8),transparent)
+}
+.band {
+  background:#121416;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line)
+}
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:18px
+}
+.card {
+  background:var(--card);
+  border:1px solid var(--line);
+  border-top:2px solid var(--gold);
+  padding:28px
+}
+.card h3 {
+  font-size:1.6rem;
+  margin-bottom:8px
+}
+.card p {
+  margin:0;
+  color:var(--mute);
+  font-size:.97rem
+}
+.two {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:44px
+}
+.two p {
+  color:var(--mute)
+}
+form {
+  display:grid;
+  gap:12px
+}
+label {
+  font-size:.9rem;
+  color:var(--mute)
+}
+input,textarea,select {
+  width:100%;
+  padding:13px;
+  font:inherit;
+  color:var(--ink);
+  background:var(--card);
+  border:1px solid var(--line)
+}
+#msg {
+  color:var(--gold);
+  font-weight:600;
+  min-height:1.5em
+}
+footer {
+  border-top:1px solid var(--gold);
+  padding:28px 0;
+  color:var(--mute);
+  font-size:.9rem
+}
+dialog {
+  border:0;
+  padding:0;
+  background:transparent;
+  max-width:94vw;
+  max-height:94vh
+}
+dialog::backdrop {
+  background:rgba(0,0,0,.88)
+}
+dialog img {
+  max-width:94vw;
+  max-height:92vh;
+  display:block
+}
+@media(max-width:720px) {
+  .two {
+    grid-template-columns:1fr
+  }
+  .btn.alt {
+    margin:12px 0 0
+  }
+  section {
+    padding:60px 0
+  }
+}
