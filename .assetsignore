@@ -1,5 +1,7 @@
-wrangler.jsonc
-README.md
+.git
+.wrangler
 .gitignore
 .assetsignore
+wrangler.jsonc
+README.md
 Lakshmi Narasimha Constructions
