@@ -1,4 +1,4 @@
-# Lakshmi Narasimha Constructions
+# Jai Lakshmi Narasimha Constructions
 
 Static website (HTML, CSS, JavaScript). No build step.
 
